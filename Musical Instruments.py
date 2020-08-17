@@ -202,19 +202,19 @@ def playDrums():
                 if centerLeft[1]>50 and centerLeft[1]<150 and centerLeft[0]>50 and centerLeft[0]<150:
                     cv2.putText(frame,'Snare',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(0,0,255),3)
                     #Snare= playsound(r'C:\Users\Ishan\Downloads\Snare-Drum-10.wav')
-                    pygame.mixer.music.load(r'C:\Users\Ishan\Downloads\Snare-Drum-10.wav')
+                    pygame.mixer.music.load(r'Music\Snare-Drum-10.wav')
                     pygame.mixer.music.play(0)
 
                 elif centerLeft[1]>150 and centerLeft[1]<250 and centerLeft[0]>175 and centerLeft[0]<275:
                     cv2.putText(frame,'Claves',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(255,0,0),3)
                     #claves = playsound(r'C:\Users\Ishan\Downloads\Claves.wav')
-                    pygame.mixer.music.load(r'C:\Users\Ishan\Downloads\Claves.wav')
+                    pygame.mixer.music.load(r'Music\Claves.wav')
                     pygame.mixer.music.play(0)
 
                 elif centerLeft[0]>250 and centerLeft[0]<300 and centerLeft[1]>300 and centerLeft[1]<350:
                     cv2.putText(frame,'Kick',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),3)
                     #kick = playsound(r'C:\Users\Ishan\Downloads\Electronic-Kick-3.wav')
-                    pygame.mixer.music.load(r'C:\Users\Ishan\Downloads\Electronic-Kick-3.wav')
+                    pygame.mixer.music.load(r'Music\Electronic-Kick-3.wav')
                     pygame.mixer.music.play(0)
 
 
@@ -231,19 +231,19 @@ def playDrums():
                 if centerRight[0]>350 and centerRight[0]<450 and centerRight[1]>175 and centerRight[1]<275:
                     cv2.putText(frame,'Clap',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(255,255,0),3)
                     #clap = playsound(r'C:\Users\Ishan\Downloads\Clap-1.wav')
-                    pygame.mixer.music.load(r'C:\Users\Ishan\Downloads\Clap-1.wav')
+                    pygame.mixer.music.load(r'Music\Clap-1.wav')
                     pygame.mixer.music.play(0)
 
                 elif centerRight[0]>450 and centerRight[0]<550 and centerRight[1]>50 and centerRight[1]<150 :
                     cv2.putText(frame,'Tom',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,255),3)
                     #tom = playsound(r'C:\Users\Ishan\Downloads\Electronic-Tom-1.wav')
-                    pygame.mixer.music.load(r'C:\Users\Ishan\Downloads\Electronic-Tom-1.wav')
+                    pygame.mixer.music.load(r'Music\Electronic-Tom-1.wav')
                     pygame.mixer.music.play(0)
 
                 elif centerRight[0]>300 and centerRight[0]<350 and centerRight[1]>350 and centerRight[1]<400:
                     cv2.putText(frame,'Kick',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),3)
                     #kick = playsound(r'C:\Users\Ishan\Downloads\Electronic-Kick-3.wav')
-                    pygame.mixer.music.load(r'C:\Users\Ishan\Downloads\Electronic-Kick-3.wav')
+                    pygame.mixer.music.load(r'Music\Electronic-Kick-3.wav')
                     pygame.mixer.music.play(0)
 
         frame_copy=frame.copy()
