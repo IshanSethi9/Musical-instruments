@@ -17,7 +17,7 @@ from pygame import mixer
 def nothing(x):
         pass
 def gGuitar():
-        img=cv2.imread(r'guitar.png')
+        img=cv2.imread(r'static\guitar.png')
         cv2.imshow('image',img)
 
 def playGuitar():
