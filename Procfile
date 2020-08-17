@@ -1,1 +1,1 @@
-web: gunicorn MusicalInstruments.wsgi --log-file -
+web: gunicorn main:MusicalInstruments --preload
