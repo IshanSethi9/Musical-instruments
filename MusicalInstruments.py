@@ -16,6 +16,9 @@ from pygame import mixer
 
 def nothing(x):
         pass
+def gGuitar():
+        img=cv2.imread(r'guitar.png')
+        cv2.imshow('image',img)
 
 def playGuitar():
         cam=cv2.VideoCapture(0)
@@ -280,7 +283,8 @@ app=Flask(__name__)
 
 @app.route('/guitar')
 def guitar():
-    playGuitar()
+    #playGuitar()
+    gGuitar()
     return render_template('guitar.html') 
 
 @app.route('/piano')
