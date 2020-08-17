@@ -117,7 +117,6 @@ pycparser==2.20
 pygame==1.9.6
 PyGetWindow==0.0.8
 Pygments==2.6.1
-pyHook @ file:///C:/Users/Ishan/pyHook-1.5.1-cp37-cp37m-win_amd64.whl
 PyJWT==1.7.1
 PyMsgBox==1.0.8
 pyOpenSSL==19.1.0
