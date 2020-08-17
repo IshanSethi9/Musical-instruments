@@ -294,7 +294,8 @@ def piano():
 
 @app.route('/drums')
 def drums():
-    playDrums()
+    #playDrums()
+    playGuitar()
     return render_template('drums.html')
 
 @app.route('/')
