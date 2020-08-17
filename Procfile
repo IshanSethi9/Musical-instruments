@@ -1,2 +1,2 @@
-web: gunicorn Musical Instruments.wsgi --log-file -
+web: gunicorn MusicalInstruments.wsgi --log-file -
 heroku ps:scale web=1
