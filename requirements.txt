@@ -132,7 +132,6 @@ PyTweening==1.0.3
 pytz==2020.1
 PyUserInput==0.1.11
 PyWavelets==1.1.1
-pywin32==227
 pywinpty==0.5.7
 PyYAML==5.3.1
 pyzmq==18.1.1
