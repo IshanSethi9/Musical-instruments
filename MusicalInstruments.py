@@ -20,7 +20,7 @@ def nothing(x):
 def playGuitar():
         cam=cv2.VideoCapture(0)
 
-        mixer.init() 
+        pygame.mixer.init() 
 
         time.sleep(2)
         circle_radius = 1
