@@ -76,32 +76,32 @@ def playGuitar():
 
                     if center[0]>50 and center[0]<550 and center[1]>50 and center[1]<75:
                         cv2.putText(frame,'E {Low}',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(0,0,255),3)
-                        pygame.mixer.music.load(r'C:\Users\Ishan\Downloads\Open-E-note-low-sixth-string.mp3')
+                        pygame.mixer.music.load(r'Music\Open-E-note-low-sixth-string.mp3')
                         pygame.mixer.music.play(0)
 
                     elif center[0]>50 and center[0]<550 and center[1]>100 and center[1]<125:
                         cv2.putText(frame,'A',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(255,0,0),3)
-                        pygame.mixer.music.load(r'C:\Users\Ishan\Downloads\Open-A-note-fifth-string.mp3')
+                        pygame.mixer.music.load(r'Music\Open-A-note-fifth-string.mp3')
                         pygame.mixer.music.play(0)
 
                     elif center[0]>50 and center[0]<550 and center[1]>150 and center[1]<175:
                         cv2.putText(frame,'D',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),3)
-                        pygame.mixer.music.load(r'C:\Users\Ishan\Downloads\Open-D-note-fourth-string.mp3')
+                        pygame.mixer.music.load(r'Music\Open-D-note-fourth-string.mp3')
                         pygame.mixer.music.play(0)
 
                     elif center[0]>50 and center[0]<550 and center[1]>200 and center[1]<225 :
                         cv2.putText(frame,'G',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,255),3)
-                        pygame.mixer.music.load(r'C:\Users\Ishan\Downloads\Open-G-note-third-string.mp3')
+                        pygame.mixer.music.load(r'Music\Open-G-note-third-string.mp3')
                         pygame.mixer.music.play(0)
 
                     elif center[0]>50 and center[0]<550 and center[1]>250 and center[1]<275 :
                         cv2.putText(frame,'B',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(255,255,0),3)
-                        pygame.mixer.music.load(r'C:\Users\Ishan\Downloads\Open-B-note-second-string.mp3')
+                        pygame.mixer.music.load(r'Music\Open-B-note-second-string.mp3')
                         pygame.mixer.music.play(0)
 
                     elif center[0]>50 and center[0]<550 and center[1]>300 and center[1]<325:
                         cv2.putText(frame,'E {High}',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(255,0,255),3)
-                        pygame.mixer.music.load(r'C:\Users\Ishan\Downloads\Open-E-note-high-first-string.mp3')
+                        pygame.mixer.music.load(r'Music\Open-E-note-high-first-string.mp3')
                         pygame.mixer.music.play(0)
 
             frame_copy=frame.copy()
