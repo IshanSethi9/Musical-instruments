@@ -1,2 +1,2 @@
-web: gunicorn --bind 0.0.0.0:$PORT Musical Instruments:app
+web: gunicorn Musical Instruments.wsgi --log-file -
 heroku ps:scale web=1
