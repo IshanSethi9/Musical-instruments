@@ -13,7 +13,6 @@ import imutils
 import time
 import pygame
 from pygame import mixer
-from flask_ngrok import run_with_ngrok
 
 def nothing(x):
         pass
@@ -277,7 +276,7 @@ def playDrums():
     cam.release()
     cv2.destroyAllWindows()
 app=Flask(__name__,template_folder=r'\Instruments', static_folder=r'\Instruments')
-run_with_ngrok(app)
+#run_with_ngrok(app)
 
 @app.route('/guitar')
 def guitar():
@@ -299,4 +298,3 @@ def instruments():
     return render_template('instruments.html')
     
 app.run()
-
