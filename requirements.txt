@@ -116,7 +116,6 @@ PyMsgBox==1.0.8
 pyOpenSSL==19.1.0
 pyparsing==2.4.7
 pyperclip==1.8.0
-pypiwin32==223
 pyproj==1.9.6
 pyreadline==2.1
 PyRect==0.1.4
