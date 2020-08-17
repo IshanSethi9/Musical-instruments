@@ -1,2 +1,2 @@
-web: gunicorn Musical Instruments:app
+web: gunicorn Musical Instruments.wsgi
 heroku ps:scale web=1
