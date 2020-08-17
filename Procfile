@@ -1,1 +1,1 @@
-web: gunicorn main:MusicalInstruments --preload
+web: gunicorn MusicalInstruments:app --preload
