@@ -20,7 +20,7 @@ def nothing(x):
 def playGuitar():
         cam=cv2.VideoCapture(0)
 
-        pygame.mixer.init() 
+        #pygame.mixer.init() 
 
         time.sleep(2)
         circle_radius = 1
@@ -56,52 +56,52 @@ def playGuitar():
             center = None
 
             # only proceed if at least one contour was found
-            if len(cnts) > 0:
+            #if len(cnts) > 0:
                 # find the largest contour in the mask, then use
                 # it to compute the minimum enclosing circle and centroid
-                c = max(cnts, key=cv2.contourArea)
-                ((x, y), radius) = cv2.minEnclosingCircle(c)
-                M = cv2.moments(c)
+                #c = max(cnts, key=cv2.contourArea)
+                #((x, y), radius) = cv2.minEnclosingCircle(c)
+                #M = cv2.moments(c)
                 # find the center from the moments 0.000001 is added to the denominator so that divide by 
                 # zero exception doesn't occur
-                center = (int(M["m10"] / (M["m00"]+0.000001)), int(M["m01"] / (M["m00"]+0.000001)))
+                #center = (int(M["m10"] / (M["m00"]+0.000001)), int(M["m01"] / (M["m00"]+0.000001)))
                 #print("center_left",center_left)
                 # only proceed if the radius meets a minimum size
-                if radius > circle_radius:
+                #if radius > circle_radius:
                     # draw the circle and centroid on the frame,
-                    cv2.circle(frame, (int(x), int(y)), int(radius),
+                 #   cv2.circle(frame, (int(x), int(y)), int(radius),
                         (0, 0, 255), 2)
-                    cv2.circle(frame, center, 5, (0, 0, 255), -1)
+                 #   cv2.circle(frame, center, 5, (0, 0, 255), -1)
 
-                    if center[0]>50 and center[0]<550 and center[1]>50 and center[1]<75:
-                        cv2.putText(frame,'E {Low}',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(0,0,255),3)
-                        pygame.mixer.music.load(r'Music\Open-E-note-low-sixth-string.mp3')
-                        pygame.mixer.music.play(0)
+                  #  if center[0]>50 and center[0]<550 and center[1]>50 and center[1]<75:
+                   #     cv2.putText(frame,'E {Low}',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(0,0,255),3)
+                    #    pygame.mixer.music.load(r'Music\Open-E-note-low-sixth-string.mp3')
+                     #   pygame.mixer.music.play(0)
 
-                    elif center[0]>50 and center[0]<550 and center[1]>100 and center[1]<125:
-                        cv2.putText(frame,'A',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(255,0,0),3)
-                        pygame.mixer.music.load(r'\Music\Open-A-note-fifth-string.mp3')
-                        pygame.mixer.music.play(0)
+                  #  elif center[0]>50 and center[0]<550 and center[1]>100 and center[1]<125:
+                   #     cv2.putText(frame,'A',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(255,0,0),3)
+                    #    pygame.mixer.music.load(r'\Music\Open-A-note-fifth-string.mp3')
+                     #   pygame.mixer.music.play(0)
 
-                    elif center[0]>50 and center[0]<550 and center[1]>150 and center[1]<175:
-                        cv2.putText(frame,'D',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),3)
-                        pygame.mixer.music.load(r'\Music\Open-D-note-fourth-string.mp3')
-                        pygame.mixer.music.play(0)
+                   # elif center[0]>50 and center[0]<550 and center[1]>150 and center[1]<175:
+                    #    cv2.putText(frame,'D',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,0),3)
+                     #   pygame.mixer.music.load(r'\Music\Open-D-note-fourth-string.mp3')
+                      #  pygame.mixer.music.play(0)
 
-                    elif center[0]>50 and center[0]<550 and center[1]>200 and center[1]<225 :
-                        cv2.putText(frame,'G',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,255),3)
-                        pygame.mixer.music.load(r'\Music\Open-G-note-third-string.mp3')
-                        pygame.mixer.music.play(0)
+                  #  elif center[0]>50 and center[0]<550 and center[1]>200 and center[1]<225 :
+                   #     cv2.putText(frame,'G',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(0,255,255),3)
+                    #    pygame.mixer.music.load(r'\Music\Open-G-note-third-string.mp3')
+                     #   pygame.mixer.music.play(0)
 
-                    elif center[0]>50 and center[0]<550 and center[1]>250 and center[1]<275 :
-                        cv2.putText(frame,'B',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(255,255,0),3)
-                        pygame.mixer.music.load(r'\Music\Open-B-note-second-string.mp3')
-                        pygame.mixer.music.play(0)
+                    #elif center[0]>50 and center[0]<550 and center[1]>250 and center[1]<275 :
+                     #   cv2.putText(frame,'B',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(255,255,0),3)
+                      #  pygame.mixer.music.load(r'\Music\Open-B-note-second-string.mp3')
+                       # pygame.mixer.music.play(0)
 
-                    elif center[0]>50 and center[0]<550 and center[1]>300 and center[1]<325:
-                        cv2.putText(frame,'E {High}',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(255,0,255),3)
-                        pygame.mixer.music.load(r'\Music\Open-E-note-high-first-string.mp3')
-                        pygame.mixer.music.play(0)
+                    #elif center[0]>50 and center[0]<550 and center[1]>300 and center[1]<325:
+                     #   cv2.putText(frame,'E {High}',(10,30),cv2.FONT_HERSHEY_SIMPLEX,1,(255,0,255),3)
+                      #  pygame.mixer.music.load(r'\Music\Open-E-note-high-first-string.mp3')
+                       # pygame.mixer.music.play(0)
 
             frame_copy=frame.copy()
 
