@@ -276,7 +276,7 @@ def playDrums():
     # close all windows
     cam.release()
     cv2.destroyAllWindows()
-app=Flask(__name__,template_folder=r'C:\Users\Ishan\Desktop\Instruments', static_folder=r'C:\Users\Ishan\Desktop\Instruments')
+app=Flask(__name__,template_folder=r'\Instruments', static_folder=r'\Instruments')
 run_with_ngrok(app)
 
 @app.route('/guitar')
